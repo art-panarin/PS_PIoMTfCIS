@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="task2.css"?>
+<background>
+    <weather>
+        <block>
+            <bl>Понедельник</bl>
+        </block>
+        <block id="c">
+            <translucent>Время дня</translucent>
+            <text>Утро</text>
+        </block>
+        <block id="c">
+            <translucent>Время</translucent>
+            <text>5:00</text>
+        </block>
+        <block id="c">
+            <translucent>Температура</translucent>
+            <text>17</text>
+        </block>
+        <block id="c">
+            <translucent>Влажность</translucent>
+            <text>80%</text>
+        </block>
+    </weather>
+    <info>
+        made by Даша, Тёма и Риша
+    </info>
+</background>
