@@ -20,4 +20,23 @@ void MainWindow::on_dButton_clicked()
     QString filename = QFileDialog::getOpenFileName(this,
                                                     tr("Open Xml"), ".",
                                                     tr("Xml files (*.xml)"));
+
+    QFile* file = new QFile(filename);
+    QXmlStreamReader xml(file);
+
+    while (!xml.atEnd() && !xml.hasError())
+    {
+        QXmlStreamReader::TokenType token = xml.readNext();
+        if (token == QXmlStreamReader::StartDocument)
+            continue;
+        if (token == QXmlStreamReader::StartElement)
+        {
+            if (xml.name() == "weather")
+                continue;
+            if (xml.name() == "block")
+                XMLConf.append(parseEtap(xml));
+
+        }
+    }
+
 }
