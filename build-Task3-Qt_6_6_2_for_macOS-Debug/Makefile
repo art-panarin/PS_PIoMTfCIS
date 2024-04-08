@@ -57,7 +57,8 @@ SOURCES       = ../Task3/main.cpp \
 OBJECTS       = main.o \
 		mainwindow.o \
 		moc_mainwindow.o
-DIST          = ../../../6.6.2/macos/mkspecs/features/spec_pre.prf \
+DIST          = ../Task3/scedule.xml \
+		../../../6.6.2/macos/mkspecs/features/spec_pre.prf \
 		../../../6.6.2/macos/mkspecs/features/device_config.prf \
 		../../../6.6.2/macos/mkspecs/common/unix.conf \
 		../../../6.6.2/macos/mkspecs/common/mac.conf \
@@ -230,6 +231,7 @@ DIST          = ../../../6.6.2/macos/mkspecs/features/spec_pre.prf \
 		../../../6.6.2/macos/mkspecs/features/qt_config.prf \
 		../../../6.6.2/macos/mkspecs/macx-clang/qmake.conf \
 		../../../6.6.2/macos/mkspecs/features/spec_post.prf \
+		../Task3/.qmake.stash \
 		../../../6.6.2/macos/mkspecs/features/exclusive_builds.prf \
 		../../../6.6.2/macos/mkspecs/features/mac/sdk.prf \
 		../../../6.6.2/macos/mkspecs/features/toolchain.prf \
@@ -269,7 +271,7 @@ TARGET        = Task3.app/Contents/MacOS/Task3
 EXPORT_QMAKE_MAC_SDK = macosx
 EXPORT_QMAKE_MAC_SDK_VERSION = 14.4
 EXPORT_QMAKE_XCODE_DEVELOPER_PATH = /Library/Developer/CommandLineTools
-EXPORT__QMAKE_STASH_ = 
+EXPORT__QMAKE_STASH_ = /Users/artemiypanarinicloud.com/Qt/Projects/PS_PIoMTfCIS/build-Task3-Qt_6_6_2_for_macOS-Debug/.qmake.stash
 EXPORT_VALID_ARCHS = x86_64 arm64
 EXPORT_DEFAULT_ARCHS = arm64
 EXPORT_ARCHS = $(filter $(EXPORT_VALID_ARCHS), $(if $(ARCHS), $(ARCHS), $(if $(EXPORT_DEFAULT_ARCHS), $(EXPORT_DEFAULT_ARCHS), $(EXPORT_VALID_ARCHS))))
@@ -458,6 +460,7 @@ Makefile: ../Task3/Task3.pro ../../../6.6.2/macos/mkspecs/macx-clang/qmake.conf 
 		../../../6.6.2/macos/mkspecs/features/qt_config.prf \
 		../../../6.6.2/macos/mkspecs/macx-clang/qmake.conf \
 		../../../6.6.2/macos/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../6.6.2/macos/mkspecs/features/exclusive_builds.prf \
 		../../../6.6.2/macos/mkspecs/features/mac/sdk.prf \
 		../../../6.6.2/macos/mkspecs/features/toolchain.prf \
@@ -665,6 +668,7 @@ Makefile: ../Task3/Task3.pro ../../../6.6.2/macos/mkspecs/macx-clang/qmake.conf 
 ../../../6.6.2/macos/mkspecs/features/qt_config.prf:
 ../../../6.6.2/macos/mkspecs/macx-clang/qmake.conf:
 ../../../6.6.2/macos/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../6.6.2/macos/mkspecs/features/exclusive_builds.prf:
 ../../../6.6.2/macos/mkspecs/features/mac/sdk.prf:
 ../../../6.6.2/macos/mkspecs/features/toolchain.prf:
@@ -734,6 +738,7 @@ clean: compiler_clean
 
 distclean: clean 
 	-$(DEL_FILE) -r Task3.app
+	-$(DEL_FILE) .qmake.stash
 	-$(DEL_FILE) Makefile
 
 

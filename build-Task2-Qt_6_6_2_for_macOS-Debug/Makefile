@@ -57,7 +57,9 @@ SOURCES       = ../Task2/main.cpp \
 OBJECTS       = main.o \
 		mainwindow.o \
 		moc_mainwindow.o
-DIST          = ../../../6.6.2/macos/mkspecs/features/spec_pre.prf \
+DIST          = ../Task2/task2.css \
+		../Task2/task2.xml \
+		../../../6.6.2/macos/mkspecs/features/spec_pre.prf \
 		../../../6.6.2/macos/mkspecs/features/device_config.prf \
 		../../../6.6.2/macos/mkspecs/common/unix.conf \
 		../../../6.6.2/macos/mkspecs/common/mac.conf \
@@ -230,6 +232,7 @@ DIST          = ../../../6.6.2/macos/mkspecs/features/spec_pre.prf \
 		../../../6.6.2/macos/mkspecs/features/qt_config.prf \
 		../../../6.6.2/macos/mkspecs/macx-clang/qmake.conf \
 		../../../6.6.2/macos/mkspecs/features/spec_post.prf \
+		../Task2/.qmake.stash \
 		../../../6.6.2/macos/mkspecs/features/exclusive_builds.prf \
 		../../../6.6.2/macos/mkspecs/features/mac/sdk.prf \
 		../../../6.6.2/macos/mkspecs/features/toolchain.prf \
@@ -269,7 +272,7 @@ TARGET        = Task2.app/Contents/MacOS/Task2
 EXPORT_QMAKE_MAC_SDK = macosx
 EXPORT_QMAKE_MAC_SDK_VERSION = 14.4
 EXPORT_QMAKE_XCODE_DEVELOPER_PATH = /Library/Developer/CommandLineTools
-EXPORT__QMAKE_STASH_ = 
+EXPORT__QMAKE_STASH_ = /Users/artemiypanarinicloud.com/Qt/Projects/PS_PIoMTfCIS/build-Task2-Qt_6_6_2_for_macOS-Debug/.qmake.stash
 EXPORT_VALID_ARCHS = x86_64 arm64
 EXPORT_DEFAULT_ARCHS = arm64
 EXPORT_ARCHS = $(filter $(EXPORT_VALID_ARCHS), $(if $(ARCHS), $(ARCHS), $(if $(EXPORT_DEFAULT_ARCHS), $(EXPORT_DEFAULT_ARCHS), $(EXPORT_VALID_ARCHS))))
@@ -458,6 +461,7 @@ Makefile: ../Task2/Task2.pro ../../../6.6.2/macos/mkspecs/macx-clang/qmake.conf 
 		../../../6.6.2/macos/mkspecs/features/qt_config.prf \
 		../../../6.6.2/macos/mkspecs/macx-clang/qmake.conf \
 		../../../6.6.2/macos/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../6.6.2/macos/mkspecs/features/exclusive_builds.prf \
 		../../../6.6.2/macos/mkspecs/features/mac/sdk.prf \
 		../../../6.6.2/macos/mkspecs/features/toolchain.prf \
@@ -665,6 +669,7 @@ Makefile: ../Task2/Task2.pro ../../../6.6.2/macos/mkspecs/macx-clang/qmake.conf 
 ../../../6.6.2/macos/mkspecs/features/qt_config.prf:
 ../../../6.6.2/macos/mkspecs/macx-clang/qmake.conf:
 ../../../6.6.2/macos/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../6.6.2/macos/mkspecs/features/exclusive_builds.prf:
 ../../../6.6.2/macos/mkspecs/features/mac/sdk.prf:
 ../../../6.6.2/macos/mkspecs/features/toolchain.prf:
@@ -734,6 +739,7 @@ clean: compiler_clean
 
 distclean: clean 
 	-$(DEL_FILE) -r Task2.app
+	-$(DEL_FILE) .qmake.stash
 	-$(DEL_FILE) Makefile
 
 
@@ -758,6 +764,16 @@ compiler_moc_header_clean:
 moc_mainwindow.cpp: ../Task2/mainwindow.h \
 		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/QMainWindow \
 		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/qmainwindow.h \
+		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/QFileDialog \
+		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/qfiledialog.h \
+		../../../6.6.2/macos/lib/QtCore.framework/Headers/QXmlStreamAttribute \
+		../../../6.6.2/macos/lib/QtCore.framework/Headers/qxmlstream.h \
+		../../../6.6.2/macos/lib/QtCore.framework/Headers/QXmlStreamReader \
+		../../../6.6.2/macos/lib/QtCore.framework/Headers/QXmlStreamWriter \
+		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/QMessageBox \
+		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/qmessagebox.h \
+		../../../6.6.2/macos/lib/QtCore.framework/Headers/QFile \
+		../../../6.6.2/macos/lib/QtCore.framework/Headers/qfile.h \
 		../../../6.6.2/macos/libexec/moc
 	/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/libexec/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -D__APPLE_CC__ -D__cplusplus=199711L -D__APPLE_CC__=6000 -D__clang__ -D__clang_major__=15 -D__clang_minor__=0 -D__clang_patchlevel__=0 -D__GNUC__=4 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -I/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/mkspecs/macx-clang -I/Users/artemiypanarinicloud.com/Qt/Projects/PS_PIoMTfCIS/Task2 -I/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/lib/QtWidgets.framework/Headers -I/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/lib/QtGui.framework/Headers -I/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/lib/QtCore.framework/Headers -I. -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -I/Library/Developer/CommandLineTools/usr/include -F/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/lib ../Task2/mainwindow.h -o moc_mainwindow.cpp
 
@@ -787,6 +803,16 @@ compiler_clean: compiler_moc_header_clean compiler_uic_clean
 main.o: ../Task2/main.cpp ../Task2/mainwindow.h \
 		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/QMainWindow \
 		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/qmainwindow.h \
+		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/QFileDialog \
+		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/qfiledialog.h \
+		../../../6.6.2/macos/lib/QtCore.framework/Headers/QXmlStreamAttribute \
+		../../../6.6.2/macos/lib/QtCore.framework/Headers/qxmlstream.h \
+		../../../6.6.2/macos/lib/QtCore.framework/Headers/QXmlStreamReader \
+		../../../6.6.2/macos/lib/QtCore.framework/Headers/QXmlStreamWriter \
+		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/QMessageBox \
+		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/qmessagebox.h \
+		../../../6.6.2/macos/lib/QtCore.framework/Headers/QFile \
+		../../../6.6.2/macos/lib/QtCore.framework/Headers/qfile.h \
 		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/QApplication \
 		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/qapplication.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../Task2/main.cpp
@@ -794,6 +820,16 @@ main.o: ../Task2/main.cpp ../Task2/mainwindow.h \
 mainwindow.o: ../Task2/mainwindow.cpp ../Task2/mainwindow.h \
 		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/QMainWindow \
 		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/qmainwindow.h \
+		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/QFileDialog \
+		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/qfiledialog.h \
+		../../../6.6.2/macos/lib/QtCore.framework/Headers/QXmlStreamAttribute \
+		../../../6.6.2/macos/lib/QtCore.framework/Headers/qxmlstream.h \
+		../../../6.6.2/macos/lib/QtCore.framework/Headers/QXmlStreamReader \
+		../../../6.6.2/macos/lib/QtCore.framework/Headers/QXmlStreamWriter \
+		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/QMessageBox \
+		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/qmessagebox.h \
+		../../../6.6.2/macos/lib/QtCore.framework/Headers/QFile \
+		../../../6.6.2/macos/lib/QtCore.framework/Headers/qfile.h \
 		ui_mainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../Task2/mainwindow.cpp
 
