@@ -29,11 +29,11 @@ void MainWindow::updateDateText()
 void MainWindow::on_rus_button_clicked()
 {
     QTranslator trans;
-    bool res = trans.load("~/PS_PIoMTfCIS/Task1/Task1_ru_Ru.qm");
+    bool res = trans.load("Task1_ru_Ru.qm");
     qDebug() << res;
     qApp ->installTranslator(&trans);
     ui -> retranslateUi(this);
-    ui->label->setText(tr(hello_string));
+    ui->label_1->setText(tr(hello_string));
     ui->label_2->setText(QLocale(QLocale::Russian).nativeCountryName());
 
     QLocale::setDefault(QLocale(QLocale::Russian));
@@ -43,12 +43,12 @@ void MainWindow::on_rus_button_clicked()
 void MainWindow::on_eng_button_clicked()
 {
     QTranslator trans;
-    bool res = trans.load("~/PS_PIoMTfCIS/Task1/Task1_en_En.qm");
+    bool res = trans.load("Task1_en_En.qm");
     qDebug() << res;
     qApp ->installTranslator(&trans);
 
     ui -> retranslateUi(this);
-    ui->label->setText(tr(hello_string));
+    ui->label_1->setText(tr(hello_string));
     ui->label_2->setText(QLocale(QLocale::English).nativeCountryName());
 
     QLocale::setDefault(QLocale(QLocale::English));
@@ -58,11 +58,11 @@ void MainWindow::on_eng_button_clicked()
 void MainWindow::on_ger_button_clicked()
 {
     QTranslator trans;
-    bool res = trans.load("~/PS_PIoMTfCIS/Task1/Task1_de_De.qm");
+    bool res = trans.load("Task1_de_De.qm");
     qDebug() << res;
     qApp ->installTranslator(&trans);
     ui -> retranslateUi(this);
-    ui->label->setText(tr(hello_string));
+    ui->label_1->setText(tr(hello_string));
     ui->label_2->setText(QLocale(QLocale::German).nativeCountryName());
 
     QLocale::setDefault(QLocale(QLocale::German));

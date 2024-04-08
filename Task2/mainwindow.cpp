@@ -24,6 +24,19 @@ void MainWindow::on_dButton_clicked()
     QFile* file = new QFile(filename);
     QXmlStreamReader xml(file);
 
+
+    //year =
+    //month
+    //day
+
+    QDate date;
+    date.setDate(yy, mm, dd);
+    int day = date.dayOfWeek();
+    QString weekDay = QDate::longDayName(day);
+
+    QString weather = "weather";
+    QString block = "block";
+
     while (!xml.atEnd() && !xml.hasError())
     {
         QXmlStreamReader::TokenType token = xml.readNext();
@@ -31,9 +44,9 @@ void MainWindow::on_dButton_clicked()
             continue;
         if (token == QXmlStreamReader::StartElement)
         {
-            if (xml.name() == "weather")
+            if (xml.name() == weather)
                 continue;
-            if (xml.name() == "block")
+            if (xml.name() == block)
                 XMLConf.append(parseEtap(xml));
 
         }

@@ -29,7 +29,7 @@ public:
     QRadioButton *rus_button;
     QRadioButton *eng_button;
     QRadioButton *ger_button;
-    QLabel *label;
+    QLabel *label_1;
     QTextEdit *textEdit;
     QLabel *label_2;
     QMenuBar *menuBar;
@@ -52,9 +52,9 @@ public:
         ger_button = new QRadioButton(centralWidget);
         ger_button->setObjectName("ger_button");
         ger_button->setGeometry(QRect(50, 280, 111, 17));
-        label = new QLabel(centralWidget);
-        label->setObjectName("label");
-        label->setGeometry(QRect(40, 20, 171, 31));
+        label_1 = new QLabel(centralWidget);
+        label_1->setObjectName("label_1");
+        label_1->setGeometry(QRect(40, 20, 171, 31));
         textEdit = new QTextEdit(centralWidget);
         textEdit->setObjectName("textEdit");
         textEdit->setGeometry(QRect(30, 70, 221, 51));
@@ -84,7 +84,7 @@ public:
         rus_button->setText(QCoreApplication::translate("MainWindow", "\320\240\321\203\321\201\321\201\320\272\320\270\320\271", nullptr));
         eng_button->setText(QCoreApplication::translate("MainWindow", "\320\220\320\275\320\263\320\273\320\270\320\271\321\201\320\272\320\270\320\271", nullptr));
         ger_button->setText(QCoreApplication::translate("MainWindow", "\320\235\320\265\320\274\320\265\321\206\320\272\320\270\320\271", nullptr));
-        label->setText(QString());
+        label_1->setText(QString());
         label_2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
     } // retranslateUi
 

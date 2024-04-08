@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>111</width>
+    <width>371</width>
     <height>168</height>
    </rect>
   </property>
@@ -17,7 +17,7 @@
    <widget class="QPushButton" name="dButton">
     <property name="geometry">
      <rect>
-      <x>10</x>
+      <x>270</x>
       <y>0</y>
       <width>91</width>
       <height>91</height>
@@ -27,13 +27,23 @@
      <string>Запись XML</string>
     </property>
    </widget>
+   <widget class="QDateEdit" name="dateEdit">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>40</y>
+      <width>141</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>111</width>
+     <width>371</width>
      <height>37</height>
     </rect>
    </property>

@@ -57,8 +57,11 @@ SOURCES       = ../Task1/main.cpp \
 OBJECTS       = main.o \
 		mainwindow.o \
 		moc_mainwindow.o
-DIST          = ../Task1/Task1_de_De.ts \
+DIST          = ../Task1/Task1_de_De.qm \
+		../Task1/Task1_de_De.ts \
+		../Task1/Task1_en_En.qm \
 		../Task1/Task1_en_En.ts \
+		../Task1/Task1_ru_Ru.qm \
 		../Task1/Task1_ru_Ru.ts \
 		../../../6.6.2/macos/mkspecs/features/spec_pre.prf \
 		../../../6.6.2/macos/mkspecs/features/device_config.prf \

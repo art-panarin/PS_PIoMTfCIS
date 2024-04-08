@@ -42,6 +42,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
+    Task1_de_De.qm \
     Task1_de_De.ts \
+    Task1_en_En.qm \
     Task1_en_En.ts \
+    Task1_ru_Ru.qm \
     Task1_ru_Ru.ts
