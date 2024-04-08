@@ -29,7 +29,7 @@ void MainWindow::updateDateText()
 void MainWindow::on_rus_button_clicked()
 {
     QTranslator trans;
-    bool res = trans.load("~/Users/Stepan/Desktop/PS/Task1/Task1_ru_Ru.qm");
+    bool res = trans.load("~/PS_PIoMTfCIS/Task1/Task1_ru_Ru.qm");
     qDebug() << res;
     qApp ->installTranslator(&trans);
     ui -> retranslateUi(this);
@@ -43,7 +43,7 @@ void MainWindow::on_rus_button_clicked()
 void MainWindow::on_eng_button_clicked()
 {
     QTranslator trans;
-    bool res = trans.load("C:/Users/Stepan/Desktop/PS/Boleznov_LR1_Variant13/Boleznov_LR1_Variant13_en_En.qm");
+    bool res = trans.load("~/PS_PIoMTfCIS/Task1/Task1_en_En.qm");
     qDebug() << res;
     qApp ->installTranslator(&trans);
 
@@ -54,11 +54,11 @@ void MainWindow::on_eng_button_clicked()
     QLocale::setDefault(QLocale(QLocale::English));
     updateDateText();
 }
-//"D:/biv223/boleznov/Boleznov_LR1_Variant13/Boleznov_LR1_Variant13_de_De.qm"
+
 void MainWindow::on_ger_button_clicked()
 {
     QTranslator trans;
-    bool res = trans.load("C:/Users/Stepan/Desktop/PS/Boleznov_LR1_Variant13/Boleznov_LR1_Variant13_de_De.qm");
+    bool res = trans.load("~/PS_PIoMTfCIS/Task1/Task1_de_De.qm");
     qDebug() << res;
     qApp ->installTranslator(&trans);
     ui -> retranslateUi(this);
