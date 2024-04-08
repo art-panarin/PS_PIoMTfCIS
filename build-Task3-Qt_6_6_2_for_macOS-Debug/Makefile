@@ -14,10 +14,10 @@ EQ            = =
 
 CC            = /Library/Developer/CommandLineTools/usr/bin/clang
 CXX           = /Library/Developer/CommandLineTools/usr/bin/clang++
-DEFINES       = -DQT_QML_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB
+DEFINES       = -DQT_QML_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_XML_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -g $(EXPORT_ARCH_ARGS) -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=11.0 -Wall -Wextra $(DEFINES)
 CXXFLAGS      = -pipe -stdlib=libc++ -g -std=gnu++1z $(EXPORT_ARCH_ARGS) -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=11.0 -Wall -Wextra $(DEFINES)
-INCPATH       = -I../Task3 -I. -I../../../6.6.2/macos/lib/QtWidgets.framework/Headers -I../../../6.6.2/macos/lib/QtGui.framework/Headers -I../../../6.6.2/macos/lib/QtCore.framework/Headers -I. -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AGL.framework/Headers -I. -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AGL.framework/Headers -I../../../6.6.2/macos/mkspecs/macx-clang -F/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/lib
+INCPATH       = -I../Task3 -I. -I../../../6.6.2/macos/lib/QtWidgets.framework/Headers -I../../../6.6.2/macos/lib/QtGui.framework/Headers -I../../../6.6.2/macos/lib/QtXml.framework/Headers -I../../../6.6.2/macos/lib/QtCore.framework/Headers -I. -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AGL.framework/Headers -I. -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/AGL.framework/Headers -I../../../6.6.2/macos/mkspecs/macx-clang -F/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/lib
 QMAKE         = /Users/artemiypanarinicloud.com/Qt/6.6.2/macos/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -40,7 +40,7 @@ DISTNAME      = Task31.0.0
 DISTDIR = /Users/artemiypanarinicloud.com/Qt/Projects/PS_PIoMTfCIS/build-Task3-Qt_6_6_2_for_macOS-Debug/.tmp/Task31.0.0
 LINK          = /Library/Developer/CommandLineTools/usr/bin/clang++
 LFLAGS        = -stdlib=libc++ -headerpad_max_install_names $(EXPORT_ARCH_ARGS) -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -mmacosx-version-min=11.0 -Wl,-rpath,@executable_path/../Frameworks -Wl,-rpath,/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/lib
-LIBS          = $(SUBLIBS) -F/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/lib -framework QtWidgets -framework QtGui -framework AppKit -framework ImageIO -framework Metal -framework QtCore -framework IOKit -framework DiskArbitration -framework AGL -framework OpenGL   
+LIBS          = $(SUBLIBS) -F/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/lib -framework QtWidgets -framework QtGui -framework AppKit -framework ImageIO -framework Metal -framework QtXml -framework QtCore -framework IOKit -framework DiskArbitration -framework AGL -framework OpenGL   
 AR            = /Library/Developer/CommandLineTools/usr/bin/ar cq
 RANLIB        = /Library/Developer/CommandLineTools/usr/bin/ranlib -s
 SED           = sed
@@ -493,6 +493,7 @@ Makefile: ../Task3/Task3.pro ../../../6.6.2/macos/mkspecs/macx-clang/qmake.conf 
 		../Task3/Task3.pro \
 		../../../6.6.2/macos/lib/QtWidgets.framework/Resources/QtWidgets.prl \
 		../../../6.6.2/macos/lib/QtGui.framework/Resources/QtGui.prl \
+		../../../6.6.2/macos/lib/QtXml.framework/Resources/QtXml.prl \
 		../../../6.6.2/macos/lib/QtCore.framework/Resources/QtCore.prl
 	$(QMAKE) -o Makefile ../Task3/Task3.pro -spec macx-clang CONFIG+=debug CONFIG+=qml_debug
 ../../../6.6.2/macos/mkspecs/features/spec_pre.prf:
@@ -701,6 +702,7 @@ Makefile: ../Task3/Task3.pro ../../../6.6.2/macos/mkspecs/macx-clang/qmake.conf 
 ../Task3/Task3.pro:
 ../../../6.6.2/macos/lib/QtWidgets.framework/Resources/QtWidgets.prl:
 ../../../6.6.2/macos/lib/QtGui.framework/Resources/QtGui.prl:
+../../../6.6.2/macos/lib/QtXml.framework/Resources/QtXml.prl:
 ../../../6.6.2/macos/lib/QtCore.framework/Resources/QtCore.prl:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ../Task3/Task3.pro -spec macx-clang CONFIG+=debug CONFIG+=qml_debug
@@ -764,7 +766,7 @@ moc_mainwindow.cpp: ../Task3/mainwindow.h \
 		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/QMainWindow \
 		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/qmainwindow.h \
 		../../../6.6.2/macos/libexec/moc
-	/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/libexec/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -D__APPLE_CC__ -D__cplusplus=199711L -D__APPLE_CC__=6000 -D__clang__ -D__clang_major__=15 -D__clang_minor__=0 -D__clang_patchlevel__=0 -D__GNUC__=4 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -I/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/mkspecs/macx-clang -I/Users/artemiypanarinicloud.com/Qt/Projects/PS_PIoMTfCIS/Task3 -I/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/lib/QtWidgets.framework/Headers -I/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/lib/QtGui.framework/Headers -I/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/lib/QtCore.framework/Headers -I. -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -I/Library/Developer/CommandLineTools/usr/include -F/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/lib ../Task3/mainwindow.h -o moc_mainwindow.cpp
+	/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/libexec/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -D__APPLE_CC__ -D__cplusplus=199711L -D__APPLE_CC__=6000 -D__clang__ -D__clang_major__=15 -D__clang_minor__=0 -D__clang_patchlevel__=0 -D__GNUC__=4 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -I/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/mkspecs/macx-clang -I/Users/artemiypanarinicloud.com/Qt/Projects/PS_PIoMTfCIS/Task3 -I/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/lib/QtWidgets.framework/Headers -I/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/lib/QtGui.framework/Headers -I/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/lib/QtXml.framework/Headers -I/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/lib/QtCore.framework/Headers -I. -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -I/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -I/Library/Developer/CommandLineTools/usr/include -F/Users/artemiypanarinicloud.com/Qt/6.6.2/macos/lib ../Task3/mainwindow.h -o moc_mainwindow.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -793,7 +795,11 @@ main.o: ../Task3/main.cpp ../Task3/mainwindow.h \
 		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/QMainWindow \
 		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/qmainwindow.h \
 		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/QApplication \
-		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/qapplication.h
+		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/qapplication.h \
+		../../../6.6.2/macos/lib/QtGui.framework/Headers/QStandardItemModel \
+		../../../6.6.2/macos/lib/QtGui.framework/Headers/qstandarditemmodel.h \
+		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/QColumnView \
+		../../../6.6.2/macos/lib/QtWidgets.framework/Headers/qcolumnview.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../Task3/main.cpp
 
 mainwindow.o: ../Task3/mainwindow.cpp ../Task3/mainwindow.h \
