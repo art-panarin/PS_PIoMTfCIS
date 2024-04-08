@@ -6,32 +6,35 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>371</width>
-    <height>168</height>
+    <width>482</width>
+    <height>208</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
    <widget class="QPushButton" name="dButton">
     <property name="geometry">
      <rect>
-      <x>270</x>
+      <x>240</x>
       <y>0</y>
-      <width>91</width>
-      <height>91</height>
+      <width>231</width>
+      <height>131</height>
      </rect>
     </property>
     <property name="text">
-     <string>Запись XML</string>
+     <string>Получить прогноз погоды на день</string>
     </property>
    </widget>
    <widget class="QDateEdit" name="dateEdit">
     <property name="geometry">
      <rect>
-      <x>50</x>
-      <y>40</y>
+      <x>10</x>
+      <y>10</y>
       <width>141</width>
       <height>22</height>
      </rect>
@@ -43,7 +46,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>371</width>
+     <width>482</width>
      <height>37</height>
     </rect>
    </property>

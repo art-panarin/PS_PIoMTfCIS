@@ -8,6 +8,8 @@
 #include <QXmlStreamWriter>
 #include <QMessageBox>
 #include <QFile>
+#include <QDebug>
+
 
 
 QT_BEGIN_NAMESPACE

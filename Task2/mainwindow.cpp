@@ -1,6 +1,15 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+#include <QString>
+#include <QDate>
+#include <QFile>
+#include <QXmlStreamReader>
+#include <QListView>
+#include <QStringListModel>
+
+
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -13,29 +22,51 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-
 void MainWindow::on_dButton_clicked()
 {
-    /* Вызываем диалог выбора файла для чтения */
-    QString filename = QFileDialog::getOpenFileName(this,
-                                                    tr("Open Xml"), ".",
-                                                    tr("Xml files (*.xml)"));
 
-    QFile* file = new QFile(filename);
+    QWidget* widget = new QWidget;
+    widget->setWindowTitle("Сегодняшняя погода");
+    widget->setMinimumHeight(150);
+    widget->setMinimumWidth(300);
+
+    QString dayName;
+    QDate date = ui->dateEdit->date();
+    int day = date.dayOfWeek();
+
+    if (day == 1)
+        dayName = "Понедельник";
+    if (day == 2)
+        dayName = "Вторник";
+    if (day == 3)
+        dayName = "Среда";
+    if (day == 4)
+        dayName = "Четверг";
+    if (day == 5)
+        dayName = "Пятница";
+    if (day == 6)
+        dayName = "Суббота";
+    if (day == 7)
+        dayName = "Воскресенье";
+
+    QString path = QFileDialog::getOpenFileName(this,"Выбор файла", QDir::homePath());
+
+    QFile* file = new QFile(path);
+    if (!file->open(QIODevice::ReadOnly | QIODevice::Text))
+    {
+        qDebug() << "Failed to open file";
+    }
+
+    /* Вызываем диалог выбора файла для чтения */
     QXmlStreamReader xml(file);
 
 
-    //year =
-    //month
-    //day
-
-    QDate date;
-    date.setDate(yy, mm, dd);
-    int day = date.dayOfWeek();
-    QString weekDay = QDate::longDayName(day);
-
     QString weather = "weather";
     QString block = "block";
+    QString bl = "bl";
+    QString text = "text";
+
+    QStringList todayWeather;
 
     while (!xml.atEnd() && !xml.hasError())
     {
@@ -47,9 +78,16 @@ void MainWindow::on_dButton_clicked()
             if (xml.name() == weather)
                 continue;
             if (xml.name() == block)
-                XMLConf.append(parseEtap(xml));
-
+                if ((xml.name() == text) or (xml.name() == bl))
+                {
+                    todayWeather.append(xml.readElementText());
+                }
         }
     }
+    QStringListModel *model = new QStringListModel(todayWeather);
+
+    QListView *view = new QListView(widget);
+    view->setModel(model);
+    widget -> show();
 
 }
