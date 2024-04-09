@@ -70,6 +70,7 @@ void MainWindow::on_dButton_clicked()
 
     while (!xml.atEnd() && !xml.hasError())
     {
+
         QXmlStreamReader::TokenType token = xml.readNext();
         if (token == QXmlStreamReader::StartDocument)
             continue;
@@ -78,13 +79,18 @@ void MainWindow::on_dButton_clicked()
             if (xml.name() == weather)
                 continue;
             if (xml.name() == block)
-                if ((xml.name() == text) or (xml.name() == bl))
-                {
-                    todayWeather.append(xml.readElementText());
-                }
+                continue;
+            if ((xml.name() == text) or (xml.name() == bl))
+            {
+                QString st = xml.readElementText();
+                todayWeather.append(st);
+            }
         }
     }
     QStringListModel *model = new QStringListModel(todayWeather);
+    // for(int loop1 = 0; loop1 < todayWeather.size(); loop1++) {
+    //     qDebug() << "DEBUG  message " << todayWeather.size() << ", says: " << todayWeather.at(loop1);
+    // }
 
     QListView *view = new QListView(widget);
     view->setModel(model);
