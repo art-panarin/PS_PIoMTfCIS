@@ -35,16 +35,19 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(482, 208);
+        MainWindow->resize(482, 314);
+        MainWindow->setStyleSheet(QString::fromUtf8("#centralwidget{\n"
+"	background-color: qconicalgradient(cx:0, cy:0, angle:135, stop:0 rgba(255, 255, 0, 69), stop:0.375 rgba(255, 255, 0, 69), stop:0.423533 rgba(251, 255, 0, 145), stop:0.45 rgba(247, 255, 0, 208), stop:0.477581 rgba(255, 244, 71, 130), stop:0.518717 rgba(255, 218, 71, 130), stop:0.55 rgba(255, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 130), stop:0.625 rgba(255, 255, 0, 69), stop:1 rgba(255, 255, 0, 69));\n"
+"}"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         centralwidget->setStyleSheet(QString::fromUtf8(""));
         dButton = new QPushButton(centralwidget);
         dButton->setObjectName("dButton");
-        dButton->setGeometry(QRect(240, 0, 231, 131));
+        dButton->setGeometry(QRect(110, 70, 231, 131));
         dateEdit = new QDateEdit(centralwidget);
         dateEdit->setObjectName("dateEdit");
-        dateEdit->setGeometry(QRect(10, 10, 141, 22));
+        dateEdit->setGeometry(QRect(180, 30, 111, 22));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");

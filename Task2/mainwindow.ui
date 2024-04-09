@@ -7,11 +7,16 @@
     <x>0</x>
     <y>0</y>
     <width>482</width>
-    <height>208</height>
+    <height>314</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#centralwidget{
+	background-color: qconicalgradient(cx:0, cy:0, angle:135, stop:0 rgba(255, 255, 0, 69), stop:0.375 rgba(255, 255, 0, 69), stop:0.423533 rgba(251, 255, 0, 145), stop:0.45 rgba(247, 255, 0, 208), stop:0.477581 rgba(255, 244, 71, 130), stop:0.518717 rgba(255, 218, 71, 130), stop:0.55 rgba(255, 255, 0, 255), stop:0.57754 rgba(255, 203, 0, 130), stop:0.625 rgba(255, 255, 0, 69), stop:1 rgba(255, 255, 0, 69));
+}</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
@@ -20,8 +25,8 @@
    <widget class="QPushButton" name="dButton">
     <property name="geometry">
      <rect>
-      <x>240</x>
-      <y>0</y>
+      <x>110</x>
+      <y>70</y>
       <width>231</width>
       <height>131</height>
      </rect>
@@ -33,9 +38,9 @@
    <widget class="QDateEdit" name="dateEdit">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>141</width>
+      <x>180</x>
+      <y>30</y>
+      <width>111</width>
       <height>22</height>
      </rect>
     </property>
