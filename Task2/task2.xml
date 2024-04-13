@@ -1,28 +1,1528 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="task2.css"?>
 <background>
-    <weather>
-        <block>
-            <bl>Понедельник</bl>
-        </block>
-        <block id="c">
-            <translucent>Время дня</translucent>
-            <text>Утро</text>
-        </block>
-        <block id="c">
-            <translucent>Время</translucent>
-            <text>5:00</text>
-        </block>
-        <block id="c">
-            <translucent>Температура</translucent>
-            <text>17</text>
-        </block>
-        <block id="c">
-            <translucent>Влажность</translucent>
-            <text>80%</text>
-        </block>
-    </weather>
-    <info>
+    <week>  
+        <day id="1">
+            <h1>Понедельник</h1>
+            <info>
+                <block>
+                    <h2>Утро</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>4:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>5:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>6:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>7:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>8:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>9:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>10:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>11:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block> 
+                    </forecast>
+                </block>
+                <block>
+                    <h2>День</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>12:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>13:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>14:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>15:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>16:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>17:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                    </forecast>
+                </block>
+                <block>
+                    <h2>Вечер</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>18:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>19:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>20:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>21:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>22:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                    </forecast>
+                </block>
+                <block>
+                    <h2>Ночь</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>23:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>0:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>1:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>2:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>3:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                    </forecast>
+                </block>
+            </info>
+        </day>
+        <day id="2">
+            <h1>Вторник</h1>
+            <info>
+                <block>
+                    <h2>Утро</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>4:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>5:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>6:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>7:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>8:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>9:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>10:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>11:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block> 
+                    </forecast>
+                </block>
+                <block>
+                    <h2>День</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>12:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>13:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>14:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>15:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>16:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>17:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                    </forecast>
+                </block>
+                <block>
+                    <h2>Вечер</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>18:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>19:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>20:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>21:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>22:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                    </forecast>
+                </block>
+                <block>
+                    <h2>Ночь</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>23:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>0:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>1:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>2:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>3:00</text>
+                                <translucent>Температура</translucent>
+                                <text>18 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                    </forecast>
+                </block>
+            </info>
+        </day>
+        <day id="3">
+            <h1>Среда</h1>
+            <info>
+                <block>
+                    <h2>Утро</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>4:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>5:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>6:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>7:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>8:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>9:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>10:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>11:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block> 
+                    </forecast>
+                </block>
+                <block>
+                    <h2>День</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>12:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>13:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>14:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>15:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>16:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>17:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                    </forecast>
+                </block>
+                <block>
+                    <h2>Вечер</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>18:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>19:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>20:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>21:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>22:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                    </forecast>
+                </block>
+                <block>
+                    <h2>Ночь</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>23:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>0:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>1:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>2:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>3:00</text>
+                                <translucent>Температура</translucent>
+                                <text>19 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                    </forecast>
+                </block>
+            </info>
+        </day>
+        <day id="4">
+            <h1>Четверг</h1>
+            <info>
+                <block>
+                    <h2>Утро</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>4:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>5:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>6:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>7:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>8:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>9:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>10:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>11:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block> 
+                    </forecast>
+                </block>
+                <block>
+                    <h2>День</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>12:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>13:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>14:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>15:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>16:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>17:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                    </forecast>
+                </block>
+                <block>
+                    <h2>Вечер</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>18:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>19:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>20:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>21:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>22:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                    </forecast>
+                </block>
+                <block>
+                    <h2>Ночь</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>23:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>0:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>1:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>2:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>3:00</text>
+                                <translucent>Температура</translucent>
+                                <text>20 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                    </forecast>
+                </block>
+            </info>
+        </day>
+        <day id="5">
+            <h1>Пятница</h1>
+            <info>
+                <block>
+                    <h2>Утро</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>4:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>5:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>6:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>7:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>8:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>9:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>10:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>11:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block> 
+                    </forecast>
+                </block>
+                <block>
+                    <h2>День</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>12:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>13:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>14:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>15:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>16:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>17:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                    </forecast>
+                </block>
+                <block>
+                    <h2>Вечер</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>18:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>19:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>20:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>21:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>22:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                    </forecast>
+                </block>
+                <block>
+                    <h2>Ночь</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>23:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>0:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>1:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>2:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>3:00</text>
+                                <translucent>Температура</translucent>
+                                <text>21 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                    </forecast>
+                </block>
+            </info>
+        </day>
+        <day id="6">
+            <h1>Суббота</h1>
+            <info>
+                <block>
+                    <h2>Утро</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>4:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>5:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>6:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>7:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>8:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>9:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>10:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>11:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block> 
+                    </forecast>
+                </block>
+                <block>
+                    <h2>День</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>12:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>13:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>14:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>15:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>16:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>17:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                    </forecast>
+                </block>
+                <block>
+                    <h2>Вечер</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>18:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>19:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>20:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>21:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>22:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                    </forecast>
+                </block>
+                <block>
+                    <h2>Ночь</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>23:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>0:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>1:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>2:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>3:00</text>
+                                <translucent>Температура</translucent>
+                                <text>22 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                    </forecast>
+                </block>
+            </info>
+        </day>
+        <day id="7">
+            <h1>Воскресенье</h1>
+            <info>
+                <block>
+                    <h2>Утро</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>4:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>5:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>6:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>7:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>8:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>9:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>10:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>11:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block> 
+                    </forecast>
+                </block>
+                <block>
+                    <h2>День</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>12:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>13:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>14:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>15:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>16:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>17:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                    </forecast>
+                </block>
+                <block>
+                    <h2>Вечер</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>18:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>19:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>20:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>21:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>22:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                    </forecast>
+                </block>
+                <block>
+                    <h2>Ночь</h2>
+                    <forecast>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>23:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>0:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>1:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>2:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                        <block>
+                                <translucent>Время</translucent>
+                                <text>3:00</text>
+                                <translucent>Температура</translucent>
+                                <text>17 C</text>
+                                <translucent>Влажность</translucent>
+                                <text>80%</text>
+                        </block>
+                    </forecast>
+                </block>
+            </info>
+        </day>
+    </week>
+    <made_by>
         made by Даша, Тёма и Риша
-    </info>
+    </made_by>
 </background>

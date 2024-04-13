@@ -1,18 +1,20 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+#include <QXmlDefaultHandler>
+#include <QFile>
+#include <QFileDialog>
+#include <QXmlInputSource>
 #include <QString>
 #include <QDate>
-#include <QFile>
 #include <QXmlStreamReader>
 #include <QListView>
 #include <QStringListModel>
 
 
-
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent),
-    ui(new Ui::MainWindow)
+    : QMainWindow(parent)
+    , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
 }
@@ -22,78 +24,71 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+QStringList everything;
+
+class XmlParser : public QXmlDefaultHandler {
+private:
+    QString m_strText;
+
+public:
+    bool startElement(const QString&,
+                      const QString&,
+                      const QString&,
+                      const QXmlAttributes& attrs
+                      )
+    {
+        for(int i = 0; i < attrs.count(); i++) {
+            if(attrs.localName(i) == "number") {
+                qDebug() << "Attr:" << attrs.value(i);
+            }
+        }
+        return true;
+    }
+
+    bool characters(const QString& strText)
+    {
+        m_strText = strText;
+        return true;
+    }
+
+    bool endElement(const QString&, const QString&, const QString& str)
+    {
+        everything << m_strText;
+        return true;
+    };
+};
+
 void MainWindow::on_dButton_clicked()
 {
+    XmlParser handler;
+    QString path = QFileDialog::getOpenFileName(this,"Выбор файла", QDir::homePath());
+    QFile file(path);
+    QXmlInputSource   source(&file);
+    QXmlSimpleReader  reader;
+
+    reader.setContentHandler(&handler);
+    reader.parse(source);
 
     QWidget* widget = new QWidget;
     widget->setWindowTitle("Сегодняшняя погода");
-    widget->setMinimumHeight(150);
-    widget->setMinimumWidth(300);
+    widget->setMinimumHeight(300);
+    widget->setMinimumWidth(600);
 
     QString dayName;
     QDate date = ui->dateEdit->date();
     int day = date.dayOfWeek();
 
-    if (day == 1)
-        dayName = "Понедельник";
-    if (day == 2)
-        dayName = "Вторник";
-    if (day == 3)
-        dayName = "Среда";
-    if (day == 4)
-        dayName = "Четверг";
-    if (day == 5)
-        dayName = "Пятница";
-    if (day == 6)
-        dayName = "Суббота";
-    if (day == 7)
-        dayName = "Воскресенье";
-
-    QString path = QFileDialog::getOpenFileName(this,"Выбор файла", QDir::homePath());
-
-    QFile* file = new QFile(path);
-    if (!file->open(QIODevice::ReadOnly | QIODevice::Text))
-    {
-        qDebug() << "Failed to open file";
-    }
-
-    /* Вызываем диалог выбора файла для чтения */
-    QXmlStreamReader xml(file);
-
-
-    QString weather = "weather";
-    QString block = "block";
-    QString bl = "bl";
-    QString text = "text";
-
     QStringList todayWeather;
-
-    while (!xml.atEnd() && !xml.hasError())
+    for (int i = (day-1)*182; i < day*182 +  1 ; ++i)
     {
-
-        QXmlStreamReader::TokenType token = xml.readNext();
-        if (token == QXmlStreamReader::StartDocument)
-            continue;
-        if (token == QXmlStreamReader::StartElement)
+        if (i < everything.size())
         {
-            if (xml.name() == weather)
-                continue;
-            if (xml.name() == block)
-                continue;
-            if ((xml.name() == text) or (xml.name() == bl))
-            {
-                QString st = xml.readElementText();
-                todayWeather.append(st);
-            }
+            todayWeather.append(everything[i]);
         }
     }
-    QStringListModel *model = new QStringListModel(todayWeather);
-    // for(int loop1 = 0; loop1 < todayWeather.size(); loop1++) {
-    //     qDebug() << "DEBUG  message " << todayWeather.size() << ", says: " << todayWeather.at(loop1);
-    // }
 
+    QStringListModel *model = new QStringListModel(todayWeather);
     QListView *view = new QListView(widget);
     view->setModel(model);
     widget -> show();
-
 }
