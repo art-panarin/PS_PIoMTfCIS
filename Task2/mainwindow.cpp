@@ -74,15 +74,40 @@ void MainWindow::on_dButton_clicked()
     widget->setMinimumHeight(300);
     widget->setMinimumWidth(600);
 
-    QString dayName;
     QDate date = ui->dateEdit->date();
     int day = date.dayOfWeek();
 
     QStringList todayWeather;
     for (int i = (day-1)*182; i < day*182 +  1 ; ++i)
     {
-        if (i < everything.size())
+        //and (not (everything[i].at( 1 ) == 'n' ) )
+        if ( (i < everything.size() )  )
         {
+            qDebug() << everything[i];
+            if (everything[i].at(everything[i].size() - 1) == 'C')
+            {
+                QString t1C = everything[i];
+                t1C = t1C.remove(" C");
+                int C1 = t1C.toInt();
+                float F1 = C1*9/5 + 32;
+                QString t1F;
+                t1F.setNum(F1);
+                t1F = t1F + " F";
+                todayWeather.append(t1F);
+                qDebug() << t1F;
+            }
+            if (everything[i].at(everything[i].size() - 1) == 'F')
+            {
+                QString t2F = everything[i];
+                t2F = t2F.remove(" F");
+                float F2 = t2F.toDouble();
+                float C2 = (F2-32)*5/9;
+                QString t2C;
+                t2C.setNum(C2);
+                t2C = t2C + " C";
+                todayWeather.append(t2C);
+                qDebug() << t2C;
+            }
             todayWeather.append(everything[i]);
         }
     }
